@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arithmetic Operations in HTML</title>
+        <script>
+            function add()
+            {
+                 let first=Number(document.getElementById("first").value);
+                 let second=Number(document.getElementById("second").value);
+                 let result;
+                 result=first+second;
+                 operations.answer.value=result;
+            }
+            function sub()
+            {
+                 let first=Number(document.getElementById("first").value);
+                 let second=Number(document.getElementById("second").value);
+                 let result;
+                 result=first-second;
+                 operations.answer.value=result;
+            }
+            function mul()
+            {
+                 let first=Number(document.getElementById("first").value);
+                 let second=Number(document.getElementById("second").value);
+                 let result;
+                 result=first*second;
+                 operations.answer.value=result;
+            }
+            function div()
+            {
+                 let first=Number(document.getElementById("first").value);
+                 let second=Number(document.getElementById("second").value);
+                 let result;
+                 result=first/second;
+                 operations.answer.value=result;
+            }
+            function mod()
+            {
+                 let first=Number(document.getElementById("first").value);
+                 let second=Number(document.getElementById("second").value);
+                 let result;
+                 result=first%second;
+                 operations.answer.value=result;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="operations">
+            <label for="first">Enter the first value : </label><input id="first" type="text" required>
+            <br>
+            <br>
+            <label for="second">Enter the second value : </label><input type="text" id="second" required>
+            <br>
+            <br>
+            <input type="button" onclick="add()" value="ADD">&nbsp;&nbsp;&nbsp;<input type="button" onclick="sub()" value="SUB">&nbsp;&nbsp;&nbsp;<input type="button" onclick="mul()" value=" MUL">&nbsp;&nbsp;&nbsp;<input type="button" onclick="div()" value="DIV">&nbsp;&nbsp;&nbsp;<input type="button" onclick="mod()"value="MOD">
+            <br>
+            <br>
+            <label>Result is : </label><input type="test" id="answer">
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
